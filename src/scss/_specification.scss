@@ -11,6 +11,10 @@
     display: flex;
 
     .col-left {
+      @media (min-width: 992px) {
+        width: 50%;
+        margin-right: 5.625rem;
+      }
 
       .specification-heading {
         font-family: 'Cormorant Garamond';
@@ -25,7 +29,7 @@
 
       .measurments {
         display: flex;
-        border-top: solid 1px rgba(70, 64, 64, .3);
+        border-top: solid 1px rgba(70, 64, 64, .2);
         margin: 2rem 0;
 
         ul {
@@ -46,8 +50,31 @@
 
             &.list-number {
               font-size: 1.375rem;
+              color: #2e2828;
             }
           }
+        }
+      }
+    }
+
+    .col-right {
+      width: 100%;
+
+      .boat-text {
+        display: flex;
+
+        h4 {
+          color: rgba(46, 40, 40, .5);
+          font-size: .75rem;
+          margin-top: 1.9rem;
+          margin-bottom: .5rem;
+        }
+
+        h5 {
+          color: #2e2828;
+          font-size: 1rem;
+          margin: 0;
+          margin-bottom: .5rem;
         }
       }
     }
