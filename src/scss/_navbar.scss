@@ -14,7 +14,6 @@ header {
     }
 
     a {
-      font-family: 'Helvetica Neue';
       text-decoration: none;
       color: #2e2828;
       font-size: .94rem;
@@ -76,7 +75,7 @@ header {
 
     }
     .nav-mobile-links {
-      display: flex;
+      display: none;
       flex-direction: column;
       padding: 1rem;
 
@@ -90,7 +89,7 @@ header {
       }
 
       &.show-hide {
-        display: none;
+        display: flex;
       }
     }
   }

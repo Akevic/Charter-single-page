@@ -1,0 +1,55 @@
+.specification {
+  padding: 0 .9rem;
+  margin: 4rem auto;
+
+  @media (min-width: 992px) {
+    width: 85%;
+    margin: 10rem auto;
+  }
+
+  .flex {
+    display: flex;
+
+    .col-left {
+
+      .specification-heading {
+        font-family: 'Cormorant Garamond';
+        font-size: 1.92rem;
+        font-weight: 300;
+        width: 60%;
+
+        @media (min-width: 992px) {
+          line-height: 1.1;
+        }
+      }
+
+      .measurments {
+        display: flex;
+        border-top: solid 1px rgba(70, 64, 64, .3);
+        margin: 2rem 0;
+
+        ul {
+
+          &:first-of-type {
+            padding-left: 0;
+          }
+
+          li {
+            list-style-type: none;
+
+            &.list-text {
+              font-family: 'Helvetica Neue';
+              color: #2e2828;
+              font-size: .75rem;
+              margin-top: .75rem;
+            }
+
+            &.list-number {
+              font-size: 1.375rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
